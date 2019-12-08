@@ -2,6 +2,8 @@
 
 A self-contained python script [publish_images.py](publish_images.py) for publishing color or depth images from a folder to ROS topic.
 
+For a fast unit test, run: `bash run_test_case.sh`
+
 ## Download
 
 ``` bash
