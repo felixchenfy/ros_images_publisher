@@ -37,7 +37,7 @@ def get_camera_info_topic_name(image_topic_name):
     return camera_info_topic_name
 
 
-def parse_command_line_argumetns():
+def parse_command_line_arguments():
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -415,6 +415,6 @@ if __name__ == '__main__':
     if APPEND_RANDOM_NUMBER_TO_NODE_NAME:
         node_name += "_" + str(np.random.randint(low=0, high=99999999999))
     rospy.init_node(node_name)
-    args = parse_command_line_argumetns()
+    args = parse_command_line_arguments()
     main(args)
     rospy.logwarn("Node `{}` stops.".format(node_name))
